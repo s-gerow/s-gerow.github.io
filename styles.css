@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    position: relative;
+    top: -20;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the Footer */
+  .footer {
+  position: relative;
+  top: 0px;
+  padding: 0;
+  background-color: darkgrey;
+  margin: 0;
+  text-align: center;
+  }
+  
+  
+  
