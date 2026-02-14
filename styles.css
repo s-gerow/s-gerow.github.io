@@ -1,53 +1,166 @@
+:root {
+    /* Colors - customize these to your preference */
+    --primary-color: #2563eb;
+    --secondary-color: #059669;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --bg-color: #ffffff;
+    --bg-secondary: #f9fafb;
+    --border-color: #e5e7eb;
+    --accent-color: #7c3aed;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Typography */
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: Georgia, serif;
+    
+    /* Layout */
+    --max-width: 800px;
+    --header-height: 60px;
+}
+
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+main{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+}
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-  }
-  
-  /* Style the header */
-  .header {
-    position: relative;
-    top: -20;
-    background-color: #f1f1f1;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
+}
+
+.topnav {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
+    background-color:rgba(255,255,255, 0.9);
+}
+
+.topnav a {
     float: left;
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the Footer */
-  .footer {
-  position: relative;
-  top: 0px;
-  padding: 0;
-  background-color: darkgrey;
-  margin: 0;
-  text-align: center;
-  }
-  
-  
-  
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: rgb(255, 50, 248);
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    text-align: center;
+}
+
+.footer p {
+    color:rgb(151, 151, 151)
+
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* gives edge space on mobile */
+  width: 100%; /* allows it to shrink on small screens */
+}
+.page-header{
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    top: 0;
+    z-index: 100;
+    height: var(--header-height)
+}
+.filter-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+}
+.filter-btn{
+    padding: var(--spacing-xs) var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+}
+.filter-btn:hover {
+    background-color: var(--border-color);
+}
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md)
+}
+.post{
+    background-color: var();
+}
+
+.post:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.post-header time {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.project-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 500;
+}
+
+.post h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-content {
+    color: var(--text-color);
+}
+.loading {
+    text-align: center;
+    color: var(--text-light);
+    padding: var(--spacing-xl);
+}

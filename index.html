@@ -6,100 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <style>
-  .grid-container {
-  display: grid;
-  grid-template-areas: 
-    'aboutme aboutme aboutme aboutme aboutme'
-    'highlight highlight highlight highlight-image highlight-image'
-    'qualification1 qualification2 qualification3 qualification4 qualification5'
-    'college-image college-image college college college';
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  row-gap: 30px;
-  background-color: #f1f1f1;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-  }
-  .grid-container > div{
-  text-decoration: none;
-  }
-  .highlight-paragraph {
-  grid-area: highlight;
-  background-color: lightgrey;
-  }
-  .highlight-paragraph a {
-  background-color: white;
-  color: black;
-  padding: 0px 15px;
-  text-align: center;
-  text-decoration: none;
-  border-style: solid;
-  border-color: #f7ce3e;
-  display: inline-block;
-  }
-  .highlight-paragraph a:hover {
-  background-color: #f7ce3e;
-  color: white;
-  }
-  .highlight-image {
-  grid-area: highlight-image;
-  margin: 0;
-  }
-  .qualifications1 {
-  grid-area: qualification1;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .qualifications2 {
-  grid-area: qualification2;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .qualifications3 {
-  grid-area: qualification3;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .qualifications4 {
-  grid-area: qualification4;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .qualifications5 {
-  grid-area: qualification5;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .college-image {
-  grid-area: college-image;
-  }
-  .college-paragraph {
-  grid-area: college;
-  background-color: lightgrey;
-  }
   .aboutme {
   grid-area: aboutme;
   color: black;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* gives edge space on mobile */
+  width: 100%; /* allows it to shrink on small screens */
   }
-  .grid-container-qualifications {
-  grid-area: qualification3, qualification2, qualification1, qualification4, qualification5;
-  display: grid;
-  grid-template-areas: 
-    'title'
-    'text';
-  grid-template-rows: 100px auto;
-  background-color: #1a2930;
-  color: white;
-  text-align: center;
-  }
-  .grid-container-qualifications > div{
-  text-decoration: none;
+  .aboutme p, 
+  .aboutme h1 {
+    text-align: left;
   }
   .title {
   grid-area: title;
@@ -121,142 +39,35 @@
   background-color: #f7ce3e;
   color: white;
   }
-  /* for mobile */
-  @media (max-width: 600px){
-    .grid-container {
-      grid-template-columns: 100%;
-      grid-template-areas: 
-        'aboutme'
-        'highlight-image'
-        'highlight'
-        'qualification1'
-        'qualification2'
-        'qualification3'
-        'qualification4'
-        'qualification5'
-        'college-image'
-        'college';
-    }
-  }
 </style>
 </head>
-<body style="background-color: #f0f0f0;">
+<body style="background-color: #ffffff;">
 
-<div class="header">
-  <h1>Seth Gerow</h1>
-  <h2>Career Portfolio</h2>
-</div>
-
+<!--Default top nav-->
 <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="Projects.html">Projects</a>
-  <a href="timeline.html">Timeline</a>
-  <a href="contactme.html">Contact Me</a>
-</div>
-<div class="grid-container">
-  <div class="aboutme">
-    <h1>Who am I?</h1>
-    <p>My name is Seth Gerow, I am a junior at Embry-Riddle Aeronautical University with a passion for both engineering and
-      physics. In an effort to explore both of the careers that I am interested in I chose to pursue a degree in engineering 
-      physics with a specialization in spacecraft systems. Additionally, I am taking courses to fulfil minor courses of study 
-      in Astronomy and Astophysics, Applied Mathmatics, and Computer Science. From this expansive coursework I hope to build 
-      a broad collection of skills that will make me a a strong applicant to a variety of fields.
-    </p>
-    <p>This website exists to showcase my progress within my education as well as my career. Within it I hope to expand on my
-      resume for potential employers as well as display my experience through the projects I choose to embark on. This website 
-      is being built from the ground up using HTML, CSS, and Java, If you notice any bugs feel free to reach out and let me know
-      as I am always trying to learn and improve my abilities and products.
-  </div>
-  <div class="highlight-paragraph" style="padding: 15px;">
-    <div style="border-style: none none none solid; border-width: thick; border-color: #f7ce3e;  padding: 15px;">
-      <h1>What I'm Currently Working On</h1>
-      <h3><i> Updated 6/29/2024</i></h3>
-      <p>This summer I am working full time at the Space and Atmospheric Instrumentation Lab (SAIL) on campus and enjoying my time in Florida.
-        If you want to know more about my previous projects or my work on campus click below!
-      </p>
-      <a href="Projects.html">
-        <p>Previous Projects</p>
-      </a>
-      <a href="undergraduate-research.html">
-        <p>SAIL</p>
-      </a>
-    </div>
-  </div>
-
-  <div class="highlight-image">
-    <img src="summerfun.JPG" alt="backgeround"  height="600px">
-  </div>
-
-  <div class="qualifications3, grid-container-qualifications" style="padding: 15px;">
-    <div class="title"></div>
-    <div class="text">
-      <h3>1</h3>
-      <p>Computer Aided Design (CAD)</p>
-      <a href="">
-        <p>More Info</p>
-      </a>
-    </div>
-  </div>
-    <div class="qualifications2, grid-container-qualifications" style="padding: 15px;">
-    <div class="title"></div>
-    <div class="text">
-      <h3>2</h3>
-      <p>Programming Languages</p>
-      <a href="">
-        <p>More Info</p>
-      </a>
-    </div>
-  </div>
-    <div class="qualifications1, grid-container-qualifications" style="padding: 15px;">
-    <div class="title">
-      <h1>Skills</h1>
-    </div>
-    <div class="text">
-      <h3>3</h3>
-      <p>Technical Report Writing</p>
-      <a href="">
-        <p>More Info</p>
-      </a>      
-    </div>
-  </div>
-    <div class="qualifications4, grid-container-qualifications" style="padding: 15px;">
-    <div class="title"></div>
-    <div class="text">
-      <h3>4</h3>
-      <p>Leadership<br>Positions</p>
-      <a href="">
-        <p>More Info</p>
-      </a>      
-    </div>
-  </div>
-    <div class="qualifications5, grid-container-qualifications" style="padding: 15px;">
-    <div class="title"></div>
-    <div class="text">
-      <h3>5</h3>
-      <p>Time<br>Management</p>
-      <a href="">
-        <p>More Info</p>
-      </a>      
-    </div>
-  </div>
-
-  <div class="college-image">
-    <img src="placeholder.jpg" alt="backgeround" width="100%" height="400px">
-  </div>
-
-  <div class="college-paragraph" style="padding: 15px;">
-    <div style="border-style: none none none solid; border-width: thick; border-color: #f7ce3e;  padding: 15px;">
-      <h1>Embry-Riddle Aeronautical University</h1>
-      <p>Embry-Riddle Aeronautical University is a private university in Daytona Beach, Florida. The main focus of the  
-        university is flight and aeronautics; with this and their proximity to the space coast, being a student at Embry-Riddle
-        privides many opportunities to build a career in the aerospace industry. 
-      </p>
-    </div>
-  </div>
+  <a href="index.html">Seth Gerow</a>
+  <a href="aboutme.html">About</a>
+  <a href="">CV</a>
+  <a href="notes.html">Notes</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
 </div>
 
-<div class="footer" style="background-color: darkgrey; padding: 15px">
-<p style="margin:0; border-style: none none solid none; border-width: thick; border-color: #f7ce3e;  padding: 15px;""><p>&copy; 2024 Seth Gerow's Career Portfolio</p>
+
+
+<div class="aboutme">
+  <h1 >Seth Gerow<h2>Undergraduate Physics Research Assistant | ERAU 2026</h2></h1>
+  <p>
+    Seth Gerow is a fourth year undergraduate student at Embry-Riddle Aeronautical University (ERAU) pursuing an accelerated B.S./M.S. degree in Engineering Physics. 
+    He is also pursuing minor courses of study in Astronomy and Astrophysics and Applied Mathematics. He will graduate in May 2026 and begin official graduate 
+    studies. He is currently an undergraduate research assistance in the Space and Atmospheric Instrumentation Lab (SAIL) under the supervision of Dr. Jeremy Riousset. 
+    He started this role in his sohphomore year and his contributions will be the focus of his master's thesis. <a href="aboutme.html" style="color: #666; text-decoration: none;">(Read More)</a>
+  </p>
+</div>
+
+
+<div class="footer">
+<p style="margin:0"><p>&copy; Copyright 2026 Seth Gerow. Hosted by Github Pages.</p>
 </div>  
 </body>
 </html>
