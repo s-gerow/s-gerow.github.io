@@ -9,6 +9,14 @@
 <!-- Load dependencies first -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- Load your utility -->
@@ -47,8 +55,19 @@
             <button class="filter-btn" data-filter="ps303">Modern Physics</button>
             <button class="filter-btn" data-filter="ma432">Linear Algebra</button>
         </div>
-
         <div class="timeline" id="timeline">
+            <div class="post">
+                <div class="post-header">
+                    <time datetime="2026-02-18">February 18,2026</time>
+                    <span class="project-badge" style="background-color: rgb(226, 40, 40);">
+                        ep455
+                    </span>
+                </div>
+                <h2>Lecture 1: Mathematical Prerequisites</h2>
+                <div class="post-content" id="ep455l1">
+                </div>
+            </div>
+
             <div class="post">
                 <div class="post-header">
                     <time datetime="2026-02-13">February 13, 2026</time>
@@ -58,16 +77,15 @@
                 </div>
                 <h2>Testing the notes upload system</h2>
                 <div class="post-content" id="content">
-
                 </div>
             </div>
-
         </div>
 
 </main>
 
 <script>
     loadAndRenderMarkdown('notes/test.md', 'content')
+    loadAndRenderMarkdown('notes/quantum1.md', 'ep455l1')
 </script>
 
 <div class="footer">
