@@ -43,14 +43,25 @@
             <button class="filter-btn" data-filter="reasearch">Research</button>
             <button class="filter-btn" data-filter="coursework">Coursework</button>
             <button class="filter-btn" data-filter="webdev">Web Development</button>
-            <button class="filter-btn" data-filter="ersonal">Personal</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
         </div>
 
         <div class="timeline" id="timeline">
-            <div class="loading">Loading posts...</div>
+            <div class="post">
+                <div class="post-header"
+                    <time datetime="2026-06-23">June 23, 2026</time>
+                    <span class="project-badge" style="background-color: rgb(226, 40, 186);">
+                        personal
+                    </span>
+                </div>
+                <div class="post-content" id="pi-nas2"></div>
+            </div>
         </div>
     </main>
 
+    <script>
+    loadAndRenderMarkdown('projects/pi-nas-ups.md', 'pi-nas2')
+    </script>
 
 <div class="footer">
 <p style="margin:0"><p>&copy; Copyright 2026 Seth Gerow. Hosted by Github Pages.</p>
