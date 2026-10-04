@@ -30,3 +30,14 @@ The Mean Well RD-125A is a dual output power supply which provides 5V at up to 1
 If we are dead set on expandability, we can instead use two high power output supplies, one for each rail. Also from Mean Well there is the LRS-150F-5 which provides 5V up to 22A for $25. And the LRS-350-12 which outputs 12V up to 29A for $35. Therefore, for $60 we can get an abundance of power for exceptional scalability. The main downside here being needing to use two AC power cables to power the system rather than just one.
 
 ### Decision
+
+
+
+
+#### cad files from
+radxa rock 3a: lukasloetkolben
+raspberry pi 4b: NITHISH CADEX
+sata hat: AB Ary
+Mean Well RD-125A: Mean Well documentation
+2.5in HDD SATA: 3D Modelling Pro Tips
+120mm PC case fan: george
